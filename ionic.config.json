@@ -1,0 +1,7 @@
+{
+    "name": "datastream",
+    "integrations": {
+        "capacitor": {}
+    },
+    "type": "react"
+}

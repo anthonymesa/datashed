@@ -1,0 +1,8 @@
+{
+    "appId": "com.anthonymesa.datastream",
+    "appName": "datastream",
+    "bundledWebRuntime": false,
+    "npmClient": "npm",
+    "webDir": "build",
+    "cordova": {}
+}

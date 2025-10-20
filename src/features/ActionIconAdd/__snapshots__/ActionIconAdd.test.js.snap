@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders an icon 1`] = `
+<button
+  className="mantine-UnstyledButton-root mantine-ActionIcon-root mantine-1pt46x6"
+  type="button"
+>
+  <svg
+    color="green"
+    fill="none"
+    height="xl"
+    onClick={[Function]}
+    radius="xl"
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth="2"
+    style={
+      Object {
+        "color": "green",
+      }
+    }
+    variant="filled"
+    viewBox="0 0 24 24"
+    width="xl"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <line
+      x1="3"
+      x2="21"
+      y1="12"
+      y2="12"
+    />
+    <line
+      x1="3"
+      x2="21"
+      y1="6"
+      y2="6"
+    />
+    <line
+      x1="3"
+      x2="21"
+      y1="18"
+      y2="18"
+    />
+  </svg>
+</button>
+`;
