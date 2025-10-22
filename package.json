@@ -10,8 +10,28 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mantine/carousel": "^8.3.5",
+    "@mantine/core": "^8.3.5",
+    "@mantine/form": "^8.3.5",
+    "@mantine/hooks": "^8.3.5",
+    "@mantine/modals": "^8.3.5",
+    "@tabler/icons-react": "^3.35.0",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.126",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "embla-carousel": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4",
+    "zustand": "^5.0.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
