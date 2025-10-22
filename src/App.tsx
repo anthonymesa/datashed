@@ -1,12 +1,19 @@
-import React from 'react';
-import { Stack } from '@mantine/core';
+import { 
+  Stack, Text
+} from '@mantine/core';
+import HeaderBar from './HeaderBar/HeaderBar'
+
+const content="lorem ipsum etc dolor"
 
 function App() {
+
   return (
     <Stack>
-      test
+      <HeaderBar />
+      <Text>
+        {content}
+      </Text>
     </Stack>
-  );
-}
+)}
 
 export default App;
