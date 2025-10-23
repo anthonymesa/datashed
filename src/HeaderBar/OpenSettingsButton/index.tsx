@@ -1,13 +1,14 @@
 import { ActionIcon } from '@mantine/core';
 import { IconAdjustments } from '@tabler/icons-react'; 
-import styles from './HeaderLeft.module.css';
+import styles from './index.module.css';
 
-function HeaderLeft() {
+function OpenSettingsButton() {
   return (
-    <ActionIcon>
+    <ActionIcon className={styles.root}>
       <IconAdjustments />
     </ActionIcon>
   )
 }
 
-export default HeaderLeft
+export default OpenSettingsButton
+

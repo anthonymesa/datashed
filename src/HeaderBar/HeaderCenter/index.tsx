@@ -1,7 +1,7 @@
 import { Box } from '@mantine/core';
-import styles from './HeaderCenter.module.css';
+import styles from './index.module.css';
 
-const content=" "
+const content=""
 
 function HeaderCenter() {
   return (
