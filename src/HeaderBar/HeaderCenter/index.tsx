@@ -1,14 +1,3 @@
-import { Box } from '@mantine/core';
-import styles from './index.module.css';
 
-const content=""
+export { default } from './view'
 
-function HeaderCenter() {
-  return (
-    <Box className={styles.root}>
-      {content}
-    </Box>
-  )
-}
-
-export default HeaderCenter
