@@ -1,37 +1,30 @@
 import { 
-  Stack, Text, Group, Badge
+  Stack
+  // Stack, Text, Group, Badge
 } from '@mantine/core';
 import HeaderBar from '@/HeaderBar'
-import NodeTreeAccordion, { useNode, getChildren } from '@/NodeTreeAccordion'
+import { NodeTree } from '@/NodeTreeAccordion';
+import { create } from 'zustand';
+import { useShallow } from 'zustand/react/shallow'
+import type { AppState } from '@/types';
+import { dummyData } from '@/dummyData';
+
+export const useAppState = create<AppState>()((set) => dummyData);
+
+const useNodeTree = () => useAppState(
+    useShallow((state) => ({ 
+      rootIds: state.rootIds, 
+      nodes: state.nodes 
+    }))
+);
 
 function App() {
-
-  const rootIds: string[] = [];
+  const { rootIds, nodes } = useNodeTree();
 
   return (
-    <Stack>
+    <Stack gap={0}>
       <HeaderBar />
-      <NodeTreeAccordion
-        rootIds={rootIds}
-        useNode={useNode}
-        getChildren={getChildren}
-        // optional: control which items can be open simultaneously, defaultValue, etc.
-        //multiple
-        renderControl={(node, { isLeaf, isLink, depth }) => (
-          <Group gap="sm">
-            {isLink && <Badge variant="light">link</Badge>}
-            <Text fw={500}>{node.name ?? node.id}</Text>
-            {isLeaf && <Text c="dimmed" size="sm">(leaf)</Text>}
-          </Group>
-        )}
-        renderPanel={(node, { isLeaf }) =>
-          isLeaf ? (
-            <Text size="sm" c="dimmed">No children</Text>
-          ) : (
-            <Text size="sm" c="dimmed">Children listed below…</Text>
-          )
-        }
-      />
+      <NodeTree rootIds={rootIds} nodes={nodes} />
     </Stack>
 )}
 

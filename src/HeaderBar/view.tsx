@@ -7,7 +7,7 @@ import OpenSettingsButton from './OpenSettingsButton';
 
 function HeaderBar() {
   return (
-    <Group className={styles.root}>
+    <Group className={styles.root} >
       <Helmet />
       <HeaderCenter />
       <OpenSettingsButton />

@@ -3,8 +3,8 @@ import { LoremIpsum } from 'lorem-ipsum'
 
 const lorem = new LoremIpsum({
   sentencesPerParagraph: {
-    max: 32,
-    min: 8
+    max: 16,
+    min: 1
   },
   wordsPerSentence: {
     max: 18,
@@ -13,6 +13,6 @@ const lorem = new LoremIpsum({
 });
 
 const dummyTitle = () => lorem.generateSentences(1);
-const dummyDetails = () => lorem.generateSentences(Math.random() * 5)
+const dummyDetails = () => lorem.generateParagraphs((Math.floor(Math.random() * 3) + 1))
 
 export { dummyTitle, dummyDetails };
