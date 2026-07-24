@@ -7,8 +7,8 @@ add_requires("sqlite3", { system = true })
 
 target("datashed")
     set_kind("static")
-    add_files("src/datashed.c")
-    add_headerfiles("include/datashed.h")
+    add_files("src/datashed.c", "src/datashed_persist.c", "src/datastream.c", "src/datadroplet.c")
+    add_headerfiles("include/datashed.h", "include/datastream.h", "include/datadroplet.h", "include/datashed_vec.h", "include/cvec.h", "include/datashed_str.h")
     add_includedirs("include", { public = true })
     add_packages("sqlite3")
 

@@ -1,15 +1,15 @@
 {
     sqlite3 = {
-        __requirestr = "sqlite3",
         __requireconfs = {
             system = true
         },
-        static = true,
-        linkdirs = "/nix/store/5vsi9mzjw741bqzg23vhzhln98z4p6m9-sqlite-3.53.3/lib",
         libfiles = "/nix/store/5vsi9mzjw741bqzg23vhzhln98z4p6m9-sqlite-3.53.3/lib/libsqlite3.a",
-        __enabled = true,
-        links = "sqlite3",
         sysincludedirs = "/nix/store/f82py3qn6s6c6zxrjfrp8b8f629x0x5h-sqlite-3.53.3-dev/include",
-        version = "3.53.3"
+        __requirestr = "sqlite3",
+        links = "sqlite3",
+        static = true,
+        version = "3.53.3",
+        linkdirs = "/nix/store/5vsi9mzjw741bqzg23vhzhln98z4p6m9-sqlite-3.53.3/lib",
+        __enabled = true
     }
 }
