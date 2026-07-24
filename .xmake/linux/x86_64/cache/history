@@ -1,0 +1,10 @@
+{
+    cmdlines = {
+        "xmake -v",
+        "xmake lua /nix/store/751k6lyn6hn3bmw1l3if08bly0gl1k0c-xmake-3.0.9/share/xmake/modules/private/utils/statistics.lua --verbose",
+        "xmake lua /nix/store/751k6lyn6hn3bmw1l3if08bly0gl1k0c-xmake-3.0.9/share/xmake/actions/build/cleaner.lua --verbose",
+        "xmake run datashed_test",
+        "xmake lua /nix/store/751k6lyn6hn3bmw1l3if08bly0gl1k0c-xmake-3.0.9/share/xmake/modules/private/utils/statistics.lua",
+        "xmake lua /nix/store/751k6lyn6hn3bmw1l3if08bly0gl1k0c-xmake-3.0.9/share/xmake/actions/build/cleaner.lua"
+    }
+}

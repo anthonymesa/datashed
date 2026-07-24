@@ -1,0 +1,20 @@
+set_project("datashed")
+set_version("0.1.0")
+set_languages("c11")
+
+add_rules("mode.debug", "mode.release")
+add_requires("sqlite3", { system = true })
+
+target("datashed")
+    set_kind("static")
+    add_files("src/datashed.c")
+    add_headerfiles("include/datashed.h")
+    add_includedirs("include", { public = true })
+    add_packages("sqlite3")
+
+target("datashed_test")
+    set_kind("binary")
+    add_files("src/datashed_test.c")
+    add_deps("datashed")
+    add_includedirs("include")
+    add_packages("sqlite3")
