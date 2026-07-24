@@ -1,4 +1,4 @@
-#include "datashed_persist.h"
+#include "../include/datashed_persist.h"
 
 #include <sqlite3.h>
 #include <stdlib.h>
